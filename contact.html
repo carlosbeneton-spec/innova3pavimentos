@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Innova3</title>
+        <link rel="icon" type="image/png" href="images/favicon3.png">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Estilos para el mapa y el formulario */
+        .map-container {
+            position: relative; overflow: hidden; padding-top: 75%; width: 100%;
+        }
+        .map-container iframe {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
+        }
+        .quote-form {
+            display: flex; flex-direction: column; gap: 20px; text-align: left; max-width: 800px; margin: auto;
+        }
+        .quote-form input, .quote-form textarea {
+            padding: 12px; border: 1px solid #ccc; font-family: inherit; font-size: 16px;
+        }
+        .quote-form button {
+            padding: 15px; background-color: #333; color: white; border: none; cursor: pointer; font-size: 16px; font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header-content">
+                <h1 class="logo-wrap">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Innova3 Logo">
+                    </a>
+                </h1>
+                <div class="gnb-wrap">
+                    <ul class="gnb-menu-list">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about-us.html">ABOUT US</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <span class="lang-wrap">
+                        <button class="bttn-lang-sel" type="button">ENG</button>
+                    </span>
+                    <span class="btn-gnb-wrap">
+                        <button class="bttn-all-menu" type="button">MENU</button>
+                    </span>
+                </div>
+            </div>
+             <div id="dropdown-menu">
+    <div class="gnb-wrap-mirror">
+        <ul class="gnb-menu-list-mirror">
+            
+            <li></li> 
+
+            <li>
+                <a href="about-us.html" class="mobile-main-link">ABOUT US</a>
+                <ul class="sub-menu">
+                    <li><a href="about-us.html#vision">Vision</a></li>
+                    <li><a href="about-us.html#history">History</a></li>
+                    <li><a href="about-us.html#careers">Careers</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="services.html" class="mobile-main-link">SERVICES</a>
+                <ul class="sub-menu">
+                    <li><a href="services.html#ultrasonic">Ultrasonic Rail Testing</a></li>
+                    <li><a href="services.html#performance">Operational Performance and Safety</a></li>
+                    <li><a href="services.html#track-health">Track Health and Integrity</a></li>
+                    <li><a href="services.html#ground-evaluation">Ground Evaluation</a></li>
+                    <li><a href="services.html#quality-assurance">Quality Assurance</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="projects.html" class="mobile-main-link">PROJECTS</a>
+                <ul class="sub-menu">
+                    <li><a href="projects.html#featured-projects">Featured Projects</a></li>
+                    <li><a href="projects.html#rd">R&D</a></li>
+                    <li><a href="projects.html#gallery">Gallery</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="contact.html" class="mobile-main-link">CONTACT</a>
+                <ul class="sub-menu">
+                    <li><a href="contact.html#contact-info">Contact Information</a></li>
+                    <li><a href="contact.html#request-quote">Request a Quote</a></li>
+                    <li><a href="contact.html#locations">Locations</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+        </header>
+
+        <div id="container">
+            <div id="content">
+                <div class="page-visual" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/bannercontacto.jpg');">
+                    <div class="page-title-sec">
+                        <span class="title-main-sub">GET IN TOUCH</span>
+                        <h2 class="title-main">Contact Us</h2>
+                    </div>
+                </div>
+
+                <div class="contents-wrap">
+                    <div class="page-tab-section">
+                        <ul class="tab-list">
+                            <li class="active"><a href="#contact-info" data-tab="contact-info">Contact Information</a></li>
+                            <li><a href="#request-quote" data-tab="request-quote">Request a Quote</a></li>
+                            <li><a href="#locations" data-tab="locations">Locations</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="contents">
+                       <div id="contact-info" class="tab-panel active">
+    <div class="tab-panel-content" style="align-items: flex-start; gap: 40px;">
+
+        <div class="tab-panel-text" style="flex: 1.5; /* <-- Ajustado para dar más espacio al mapa */">
+            <h3>Contact Information</h3>
+
+            <p>
+                <strong>Quotes & Sales</strong><br>
+                Cel: +52 (222) 627 9265<br>
+                <a href="mailto:ventas@innova3.com.mx">ventas@innova3.com.mx</a><br>
+                <a href="mailto:pavimentos@innova3.com.mx">pavimentos@innova3.com.mx</a><br>
+                <a href="http://www.innova3.com.mx" target="_blank">www.innova3.com.mx</a>
+            </p>
+
+            <p>
+                <strong>Head Office and Laboratory</strong><br>
+                Carretera Estatal a Coronango, Número 303.<br>
+                Cuautlancingo, Puebla.<br>
+                C.P. 72705
+            </p>
+
+            <p>
+                <strong>Complaints and suggestions:</strong><br>
+                <a href="mailto:sgc@innova3.com.mx">sgc@innova3.com.mx</a>
+            </p>
+
+            <hr style="margin: 25px 0; border: 0; border-top: 1px solid #eee;">
+
+            <h3>Directory</h3>
+
+            <p>
+                <strong>Human Resources</strong><br>
+                +52 222 627 9259<br>
+                Join our team! <a href="mailto:reclutamiento@innova3.com.mx">reclutamiento@innova3.com.mx</a>
+            </p>
+
+            <p>
+                <strong>Purchasing Department</strong><br>
+                +52 222 564 7885
+            </p>
+            
+            <p>
+                <strong>Maintenance and Systems</strong><br>
+                +52 222 401 2476
+            </p>
+
+            <p style="margin-top: 20px;">
+                <em>For quotes, please fill out the form and we will get in touch with you.</em>
+            </p>
+        </div>
+
+        <div class="tab-panel-image" style="flex: 1; /* <-- Se mantiene en 1 */">
+            <div class="map-container" style="padding-top: 100%;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1150.7684430214601!2d-98.2962609700391!3d19.081062130879378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc6d6c746b951%3A0x953a60aa00ed39cd!2sInnova%20Pavements%20Mexico!5e0!3m2!1sen!2smx!4v1758388201778!5m2!1sen!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+                        <div class="contents">
+                        <div id="contact-info" class="tab-panel active">
+                            </div>
+
+                        <div id="request-quote" class="tab-panel">
+                            <h3 style="text-align: center; font-family: 'Klavika', sans-serif; font-size: 32px; margin-bottom: 30px;">Request a Quote</h3>
+                            
+                            <form class="quote-form" action="https://formspree.io/f/mdkwejdw" method="POST">
+                                <label for="name">Your Name:</label>
+                                <input type="text" id="name" name="name" required>
+                                
+                                <label for="email">Your Email:</label>
+                                <input type="email" id="email" name="email" required>
+                                
+                                <label for="service">Service of Interest:</label>
+                                <input type="text" id="service" name="service">
+                                
+                                <label for="project-details">Tell us about your project:</label>
+                                <textarea id="project-details" name="message" rows="5" required></textarea> <button type="submit">Submit Request</button>
+                            </form>
+                        </div>
+<div id="locations" class="tab-panel">
+    <div class="tab-panel-content" style="align-items: flex-start;">
+        
+        <div class="tab-panel-image">
+            <img src="images/locations1.png" alt="Map of Innova3 locations in Mexico" style="width:100%; height:auto; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+        </div>
+
+        <div class="tab-panel-text">
+            <h3>Our Locations</h3>
+            <p>
+                To provide the best service to our clients, we have a strategic presence in key locations throughout the country.<br><p><strong>Find us wherever your project needs us.</strong></p>
+            </p>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>About Us</h4>
+                <p>Applied Science for Transportation Infrastructure. Offering innovative solutions in pavement engineering, road safety, and materials analysis.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-map-marker-alt" style="color: #FDC82F;"></i> Carretera estatal Coronango Ext. 303. Col. Cuautlancingo. Puebla pue. C.P: 72705</p>
+                <p><i class="fas fa-phone" style="color: #FDC82F;"></i> +52 (222) 627 9265</p>
+                <p><i class="fas fa-envelope" style="color: #FDC82F;"></i> ventas@innova3.com.mx</p>
+            </div>
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Innova3Railways. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

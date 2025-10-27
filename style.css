@@ -56,12 +56,13 @@ body {
     background-color: #FAFAFA;
     position: relative;
     z-index: 1001;
+    height: 88px;
 }
 .logo-wrap a {
     display: block;
 }
 .logo-wrap img {
-    height: 40px;
+    height: 25px;
     width: auto;
 }
 .gnb-wrap {

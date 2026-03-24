@@ -1,4 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
+Promise.all([
+    fetch('header.html').then(r => r.text()).then(html => {
+        document.getElementById('header-placeholder').innerHTML = html;
+    }),
+    fetch('footer.html').then(r => r.text()).then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+    })
+]).then(initPage);
+
+function initPage() {
 
     // --- SECCIÓN 1: LÓGICA DE MENÚS (UNIFICADA Y CORREGIDA) ---
     const header = document.getElementById('header');
@@ -105,4 +114,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     activateTabFromHash();
-});
+}

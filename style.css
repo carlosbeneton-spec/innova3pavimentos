@@ -148,8 +148,8 @@ body {
     border-bottom-color: #000;
 }
 .contents {
-    padding-top: 40px;
-     padding-bottom: 80px; /* <--- AÑADE ESTA LÍNEA */
+    padding-top: 20px;
+     padding-bottom: 40px; /* <--- AÑADE ESTA LÍNEA */
     text-align: center;
 }
 .tab-panel {
@@ -174,7 +174,7 @@ body {
     display: flex;
     align-items: center;
     text-align: left;
-    gap: 60px; 
+    gap: 30px; 
 }
 .tab-panel-image {
     flex: 1; 
@@ -259,6 +259,7 @@ body {
     background-color: #353735;
     color: #ecf0f1;
     padding: 40px 50px 20px 50px;
+    margin-top: 60px;
 }
 .footer-container {
     display: flex;
